@@ -16,6 +16,14 @@ def book_list(inventory: list):
         print(book["title"])
 
 
+# Suche nach einem Buchtitel
+def book_search(inventory: list, title: str) -> dict or None:
+    for book in inventory:
+        if book["title"] == title:
+            return book
+    return None
+
+
 # ### PROGRAMM
 if __name__ == '__main__':
     pass

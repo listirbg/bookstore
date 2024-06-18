@@ -7,9 +7,15 @@ Ein Programm zur Verwaltung eines Buchladens.
     - title (Titel des Buchs, Text)
     - author (Autor des Buchs, Text)
     - price (Preis des Buchs, Fließkommazahl)
-  - title, author und price werden der Liste inventory als Dict angefügt
+  - Parameter title, author und price werden der Liste inventory als Dict angefügt
 
 - book_list
   - Parameter:
     - inventory (Liste der Bücher)
   - Zeigt die Titel aller Bücher an
+
+- book_search
+  - Parameter:
+    - inventory (Liste der Bücher)
+    - title (Titel, nach dem gesucht wird, Text)
+  - Sucht das Buch mit dem übergebenen Titel und gibt das Dict dieses Buches oder None (falls das Buch nicht gefunden wurde) zurück
