@@ -33,6 +33,15 @@ def book_filter_price(inventory: list[dict], max_price: float = 20.0) -> list[di
     return books_filtered
 
 
+# Gesamtwert des Bestands berechnen
+def book_total_value(inventory: list[dict]) -> float:
+    prices: list[float] = []
+    for book in inventory:
+        prices.append(book["price"])
+    total_value: float = sum(prices)
+    return total_value
+
+
 # ### PROGRAMM
 if __name__ == '__main__':
     pass
